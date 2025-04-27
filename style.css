@@ -1,5 +1,58 @@
 .holder {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Три рівні колонки */
+  gap: 10px; /* Відстань між блоками */
+  border: 3px black;
+}
+
+.item {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Білий текст */
+  box-sizing: border-box;
+}
+
+/* Встановлюємо кольори для кожного блоку */
+.item:nth-child(1) {
+  background-color: red;
+  order: -2;  /* Червоний фон */
+}
+
+.item:nth-child(2) {
+  background-color: lightblue;  /* Голубий фон */
+}
+
+.item:nth-child(3) {
+  background-color: violet;  /* Фіолетовий фон */
+}
+
+.item:nth-child(4) {
+  background-color: green;  /* Зелений фон */
+}
+
+.item:nth-child(5) {
+  background-color: orange;
+  order: -1;  /* Оранжевий фон */
+}
+
+/* Забезпечуємо однакову ширину для всіх елементів */
+.holder {
+  grid-template-columns: repeat(3, 1fr); /* Три рівні колонки */
+}
+
+.item:nth-child(4), .item:nth-child(5) {
+  grid-column: span 1;  /* Кожен блок займає одну колонку */
+}
+
+/* Встановлюємо, щоб другий рядок не відрізнявся по ширині від першого */
+.item:nth-child(4) {
+  grid-column: span 1; /* Залишаємо зелену панель на одній колонці */
+}
+
+.item:nth-child(5) {
+  grid-column: span 1; /* Залишаємо оранжеву панель на одній колонці */
 }
