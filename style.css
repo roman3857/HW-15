@@ -21,25 +21,30 @@
 
 .item:nth-child(1) {
   background-color: red;
+order: +1;
 }
 
 .item:nth-child(2) {
   background-color: lightblue;
+  order: +4;
 }
 
 .item:nth-child(3) {
   background-color: violet;
   border-radius: 0;
+  order: +3;
 }
 
 .item:nth-child(4) {
   background-color: green;
   border-radius: 0;
+  order: +5;
 }
 
 .item:nth-child(5) {
   background-color: orange;
   border-radius: 0;
+  order: +2;
 }
 
 .holder {
