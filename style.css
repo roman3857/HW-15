@@ -4,8 +4,10 @@
   border: 3px solid black;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 1400px;
+  max-width: 1000px;
+  width: 1000px;
   height: 200px;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -24,29 +26,34 @@
 .item:nth-child(1) {
   background-color: red;
   order: +1;
+  min-width: 50%;
 }
 
 .item:nth-child(2) {
   background-color: lightblue;
   order: +4;
+  min-width: 33.333333%;
 }
 
 .item:nth-child(3) {
   background-color: violet;
   border-radius: 0;
   order: +3;
+  min-width: 33.333333%;
 }
 
 .item:nth-child(4) {
   background-color: green;
   border-radius: 0;
   order: +5;
+  min-width: 33.333333%;
 }
 
 .item:nth-child(5) {
   background-color: orange;
   border-radius: 0;
   order: +2;
+  min-width: 50%;
 }
 
 .holder {
