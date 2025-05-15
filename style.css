@@ -25,35 +25,32 @@
 
 .item:nth-child(1) {
   background-color: red;
-  order: +1;
-  min-width: 50%;
+  order: 1;
+  flex-grow: 2;
 }
 
 .item:nth-child(2) {
   background-color: lightblue;
-  order: +4;
-  min-width: 33.333333%;
+  order: 4;
+  flex-grow: 2;
 }
 
 .item:nth-child(3) {
   background-color: violet;
   border-radius: 0;
-  order: +3;
-  min-width: 33.333333%;
+  order: 3;
 }
 
 .item:nth-child(4) {
   background-color: green;
   border-radius: 0;
-  order: +5;
-  min-width: 33.333333%;
+  order: 5;
 }
 
 .item:nth-child(5) {
   background-color: orange;
   border-radius: 0;
-  order: +2;
-  min-width: 50%;
+  order: 2;
 }
 
 .holder {
